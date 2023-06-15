@@ -1,4 +1,4 @@
-# Lexi Camp - Language Learning Flatform
+# Lexi Camp - Language Learning Platform
 
 ## Main Features:
 * Login and Registration System
