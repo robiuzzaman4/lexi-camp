@@ -11,13 +11,15 @@ const AboutUs = () => {
                 <h1 className="text-center text-2xl font-bold text-emerald-500 mb-8">Know About Us</h1>
                 <div className="grid md:grid-cols-2 gap-4">
                     <motion.div
-                        initial={{ opacity: 0, translateX: 60 }}
-                        whileInView={{ opacity: 1, translateX: 0 }}>
+                        initial={{ opacity: 0, translateY: 60 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.5 }}>
                         <LazyLoadImage effect="blur" className="bg-cover rounded-lg" src={aboutPic} alt="" />
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, translateX: -60 }}
-                        whileInView={{ opacity: 1, translateX: 0 }}
+                        initial={{ opacity: 0, translateY: 60 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ duration: 0.5 }}
                         className="flex flex-col justify-center gap-4">
                         <h3 className="text-2xl font-bold">
                             Welcome to Lexi Camp, your ultimate language learning destination!

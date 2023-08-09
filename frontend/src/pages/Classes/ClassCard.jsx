@@ -69,8 +69,9 @@ const ClassCard = ({ singleClass }) => {
 
     return (
         <motion.div
-            initial={{ opacity: 0, scale: .5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
             className={`bg-white dark:bg-neutral-800/50 p-4 rounded-lg grid gap-4 shadow ${availableSeats === 0 && "bg-red-400"}`}>
             <LazyLoadImage effect='blur' className="rounded-lg" src={classPhoto} alt="" />
             <div className="grid gap-1.5 text-neutral-600 dark:text-neutral-400">

@@ -6,8 +6,9 @@ const InstructorCard = ({ instructor }) => {
     const { name, email, photo } = instructor;
     return (
         <motion.div
-            initial={{ opacity: 0, scale: .5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
             className="bg-white dark:bg-neutral-800/50 grid place-items-center gap-4 p-8 shadow group rounded-lg">
             <div className="overflow-hidden shadow rounded-tl-2xl rounded-br-2xl">
                 <div className="group-hover:scale-110 transition-transform duration-300">
